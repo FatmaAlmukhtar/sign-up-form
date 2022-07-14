@@ -14,7 +14,7 @@ const password = document.getElementById('password');
 const passError = document.querySelector('.passError');
 
 const passwordConfirmation = document.getElementById('confirm-password');
-const passConfirmError = document.querySelector('passConfirmError');
+const passConfirmError = document.querySelector('.passConfirmError');
 
 letters = /[A-Za-z]/
 digits = /[0-9]/;
@@ -28,12 +28,12 @@ firstName.addEventListener('input', () => {
 })
 
 lastName.addEventListener('input', () => {
-    if(specialChar.test(lastName.value) || digits.test(lastName.value)) lastNameError.innerHTML = 'First name must only contain letters';
+    if(specialChar.test(lastName.value) || digits.test(lastName.value)) lastNameError.innerHTML = 'Last name must only contain letters';
     else lastNameError.innerHTML = '';
 })
 
 email.addEventListener('input', () => {
-    if(emailSpecialChar.test(email.value)) emailError.innerHTML = 'email can only contain these special characters: .-_';
+    if(emailSpecialChar.test(email.value)) emailError.innerHTML = 'Email can only contain these special characters: .-_';
     else emailError.innerHTML = '';
 })
 
@@ -43,7 +43,7 @@ phoneNumber.addEventListener('input', () => {
 })
 
 password.addEventListener('input', () => {
-    if(passwordSpecialChar.test(password.value)) passError.innerHTML = 'password can only contain these special characters: _-$%&!';
+    if(passwordSpecialChar.test(password.value)) passError.innerHTML = 'Password can only contain these special characters: _-$%&!';
     else passError.innerHTML = '';
 })
 
