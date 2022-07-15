@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="./loginStyle.css">
+</head>
+<body>
+    <img class="background image" src="../assets/background.jpg" alt="background image">
+    <div>
+        <label for="email"><span class="required">*</span>Email</label>
+        <input type="email" name="" id="email" pattern="[a-z0-9._-]+@[a-z0-9]+.[a-z]{2,}" required>
+        <p class="emailError"></p>
+
+        <label for="password"><span class="required">*</span>Password</label>
+        <input type="password" name="" id="password" pattern="[A-Za-z0-9_&$%!-]{8,16}" required>
+        <p class="passError"></p>
+
+        <button type="submit">Log in</button>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>
