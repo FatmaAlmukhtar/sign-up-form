@@ -9,17 +9,21 @@
 </head>
 <body>
     <img class="background image" src="../assets/background.jpg" alt="background image">
-    <div>
-        <label for="email"><span class="required">*</span>Email</label>
-        <input type="email" name="" id="email" pattern="[a-z0-9._-]+@[a-z0-9]+.[a-z]{2,}" required>
-        <p class="emailError"></p>
+    <form action="">
+        <div>
+            <label for="email"><span class="required">*</span>Email</label>
+            <input type="email" name="" id="email" pattern="[a-z0-9._-]+@[a-z0-9]+.[a-z]{2,}" required>
+            <p class="emailError"></p>
+        </div>
 
-        <label for="password"><span class="required">*</span>Password</label>
-        <input type="password" name="" id="password" pattern="[A-Za-z0-9_&$%!-]{8,16}" required>
-        <p class="passError"></p>
+        <div>
+            <label for="password"><span class="required">*</span>Password</label>
+            <input type="password" name="" id="password" pattern="[A-Za-z0-9_&$%!-]{8,16}" required>
+            <p class="passError"></p>
+        </div>
 
         <button type="submit">Log in</button>
-    </div>
+    </form>
     <script src="./login.js"></script>
 </body>
 </html>

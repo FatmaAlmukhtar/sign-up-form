@@ -14,16 +14,21 @@ body {
     filter: blur(8px);
 }
 
-div {
+form {
     position: absolute;
     background-color: white;
     width: 400px;
     height: 250px;
     border-radius: 10px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 50px;
+    justify-content: space-around;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
 }
 
 button {
